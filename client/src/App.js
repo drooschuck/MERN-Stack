@@ -1,4 +1,4 @@
-import { Button } from "antd";
+// import { Button } from "antd";
 import "./stylesheets/theme.css";
 import "./stylesheets/alignments.css";
 import "./stylesheets/textelements.css";
@@ -18,6 +18,7 @@ import WriteExam from "./pages/user/WriteExam";
 import UserReports from "./pages/user/UserReports";
 import AdminReports from "./pages/admin/AdminReports";
 
+
 function App() {
   const { loading } = useSelector((state) => state.loader);
   return (
@@ -32,13 +33,12 @@ function App() {
           {/* User Routes */}
           <Route
             path="/"
-            element={
-              <ProtectedRoute>
-                 <Home />
-              </ProtectedRoute>
-               
-            }
-          />
+            element= {
+                <ProtectedRoute>
+                  <Home />
+                </ProtectedRoute>
+              }
+         />
           <Route
             path="/user/write-exam/:id"
             element={
