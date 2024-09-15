@@ -13,7 +13,7 @@ module.exports = (req, res, next) =>  {
   } catch (error) {
    // console.error('Authentication error:', error);
     res.status(401).send({
-      message: "You are not authenticated",
+      message: "You are not authenticated .. register or login",
       data: error,
       success: false,
     });
